@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Netflix Sans";
+    src: url("netflix-sans-font/NetflixSans-Regular.otf"), format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #141414;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 80px;
+}
+h1{
+    font-family: "Netflix Sans";
+    font-size: 50px;
+    color: white;
+}
+.botoes_fotos{
+    background-color: #141414;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.botoes_fotos img{
+    border-radius: 12px;
+}
+.botoes_fotos:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.botoes_fotos:last-child:hover{
+    background-color: rgb(204, 204, 204);
+    border-radius: 12px;
+}
+#div_meio{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#botao_gerenciar{
+    width: 250px;
+    height: 50px;
+    background-color: #141414;
+    border: gray 2px solid;
+    font-family: "Netflix Sans";
+    font-size: 24px;
+    color: gray;
+    transition: all 0.5s ease-in-out;
+}
+#botao_gerenciar:hover{
+    background-color: #e50914;
+    color: white;
+    font-size: 25px;
+    border: #e50914 2px solid;
+    cursor: pointer;
+}
