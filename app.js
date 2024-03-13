@@ -29,53 +29,71 @@ botao1.addEventListener('click', function() {
     }
 });
 
+function funcao_Sliders(slider_interno_Id, botao1_slider_Id, botao1_slider_img_Id, botao2_slider_Id, botao2_slider_img_Id) {
+    var totalMargin = 0;
+    var sliderDiv = document.getElementById(slider_interno_Id);
+    var button1 = document.getElementById(botao1_slider_Id);
+    var button1Img = document.getElementById(botao1_slider_img_Id);
+    var button2 = document.getElementById(botao2_slider_Id);
+    var button2Img = document.getElementById(botao2_slider_img_Id);
 
+    button1.addEventListener('mouseover', function() {
+        button1Img.style.display = 'block';
+    });
+
+    button1.addEventListener('mouseout', function() {
+        button1Img.style.display = 'none';
+        button1Img.style.transform = 'scale(1.0)';
+    });
+
+    button1.addEventListener('click', function() {
+        if (sliderDiv.style.marginLeft < -16006 + 'px') {
+            totalMargin = 0;
+            sliderDiv.style.marginLeft = totalMargin + 'px';
+        } else {
+            totalMargin = totalMargin - 1758;
+            sliderDiv.style.marginLeft = totalMargin + 'px';
+        }
+    });
+
+    button2.addEventListener('mouseover', function() {
+        button2Img.style.display = 'block';
+    });
+
+    button2.addEventListener('mouseout', function() {
+        button2Img.style.display = 'none';
+        button2Img.style.transform = 'scale(1.0)';
+    });
+
+    sliderDiv.style.marginLeft = '0px';
+
+    button2.addEventListener('click', function() {
+        if (sliderDiv.style.marginLeft == 0 + 'px') {
+            totalMargin = -12306;
+            sliderDiv.style.marginLeft = totalMargin + 'px';
+        } else {
+            totalMargin = totalMargin + 1758;
+            sliderDiv.style.marginLeft = totalMargin + 'px';
+        }
+    });
+}
 
 /*SLIDER SECAO 1 */
-var totalMargin = 0;
-var slider_secao1_div = document.getElementById('div_slider_interno');
-/*BOTAO 1*/
-var botao1_slider_secao1 = document.getElementById('botao1_slider');
-var img_botao1 = document.getElementById('botao1_slider_img');
-botao1_slider_secao1.addEventListener('mouseover', function() {
-    img_botao1.style.display = 'block';
-});
-botao1_slider_secao1.addEventListener('mouseout', function() {
-    img_botao1.style.display = 'none';
-    img_botao1.style.transform = 'scale(1.0)';
-});
-botao1_slider_secao1.addEventListener('click', function() {
-    if (slider_secao1_div.style.marginLeft < -16006 + 'px') {
-        totalMargin = 0;
-        slider_secao1_div.style.marginLeft = totalMargin + 'px';
-    } else {
-        totalMargin = totalMargin - 1758;
-        slider_secao1_div.style.marginLeft = totalMargin + 'px';
-    }
-});
+funcao_Sliders('div_slider_interno', 'botao1_slider', 'botao1_slider_img', 'botao2_slider', 'botao2_slider_img');
 
-/*BOTAO 2*/
-var botao2_slider_secao1 = document.getElementById('botao2_slider');
-var img_botao2 = document.getElementById('botao2_slider_img');
-botao2_slider_secao1.addEventListener('mouseover', function() {
-    img_botao2.style.display = 'block';
-});
-botao2_slider_secao1.addEventListener('mouseout', function() {
-    img_botao2.style.display = 'none';
-    img_botao2.style.transform = 'scale(1.0)';
-});
+/*SLIDER SECAO 2 */
+funcao_Sliders('div_slider_secao2_interno', 'botao1_slider_secao2', 'botao1_slider_secao2_img', 'botao2_slider_secao2', 'botao2_slider_secao2_img');
 
-var contadorCliques2Secao1 = 0;
-slider_secao1_div.style.marginLeft ='0px';
-botao2_slider_secao1.addEventListener('click', function() {
-    if (slider_secao1_div.style.marginLeft == 0 + 'px') {
-        totalMargin = -12306;
-        slider_secao1_div.style.marginLeft = totalMargin + 'px';
-    } else {
-        totalMargin = totalMargin + 1758;
-        slider_secao1_div.style.marginLeft = totalMargin + 'px';
-        
-    }
-});
+/*SLIDER SECAO 3 */
+funcao_Sliders('div_slider_secao3_interno', 'botao1_slider_secao3', 'botao1_slider_secao3_img', 'botao2_slider_secao3', 'botao2_slider_secao3_img');
 
 
+
+
+
+/*SLIDER SECAO 6 */
+funcao_Sliders('div_slider_secao6_interno', 'botao1_slider_secao6', 'botao1_slider_secao6_img', 'botao2_slider_secao6', 'botao2_slider_secao6_img');
+
+
+/*SLIDER SECAO 7 */
+funcao_Sliders('div_slider_secao7_interno', 'botao1_slider_secao7', 'botao1_slider_secao7_img', 'botao2_slider_secao7', 'botao2_slider_secao7_img');

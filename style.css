@@ -22,7 +22,11 @@ align-items: center;
   padding: 20px 5%;
   background-color: rgba(0, 0, 0, 0.488);
 }
-
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
 #div_esquerda_header{
   display: flex;
   align-items: center;
@@ -303,7 +307,290 @@ display: flex;
     border-radius: 4px;
 }
 /* FIM SEÇÃO 1 */
+/* SEÇÃO 2 */
+#secao2{
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+#div_slider_secao2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#div_slider_secao2 > h3{
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#slider_secao2{
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+#slider_secao2 > button{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.611);
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
 
+}
+/*BOTAO 1*/
+#botao1_slider_secao2{
+  left: 0;
+}
+#botao1_slider_secao2 > img{
+  margin-left: 10px;
+}
+/*BOTAO 2*/
+#botao2_slider_secao2{
+  right: 0;
+}
+#botao2_slider_secao2 > img{
+  margin-right: 10px;
+}
+#slider_secao2 > button > img{
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out; 
+  
+}
+#slider_secao2 > button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#div_slider_secao2_interno{
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+}
+#div_slider_secao2_interno > img{
+    border-radius: 4px;
+}
+
+
+/* SEÇÃO 3 */
+#secao3{
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+#div_slider_secao3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#div_slider_secao3 > h3{
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#slider_secao3{
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+#slider_secao3 > button{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.611);
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+
+}
+/*BOTAO 1*/
+#botao1_slider_secao3{
+  left: 0;
+}
+#botao1_slider_secao3 > img{
+  margin-left: 10px;
+}
+/*BOTAO 2*/
+#botao2_slider_secao3{
+  right: 0;
+}
+#botao2_slider_secao3 > img{
+  margin-right: 10px;
+}
+#slider_secao3 > button > img{
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out; 
+  
+}
+#slider_secao3 > button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#div_slider_secao3_interno{
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+}
+#div_slider_secao3_interno > img{
+    border-radius: 4px;
+}
+/* FIM SEÇÃO 3 */
+/* SEÇÃO 4 */
+#secao4{
+  height: 620px;
+}
+/* FIM SEÇÃO 4 */
+/* SEÇÃO 5 */
+/* FIM SEÇÃO 5 */
+/* SEÇÃO 6 */
+#secao6{
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+#div_slider_secao6{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#div_slider_secao6 > h3{
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#slider_secao6{
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+#slider_secao6 > button{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.611);
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+
+}
+/*BOTAO 1*/
+#botao1_slider_secao6{
+  left: 0;
+}
+#botao1_slider_secao6 > img{
+  margin-left: 10px;
+}
+/*BOTAO 2*/
+#botao2_slider_secao6{
+  right: 0;
+}
+#botao2_slider_secao6 > img{
+  margin-right: 10px;
+}
+#slider_secao6 > button > img{
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out; 
+  
+}
+#slider_secao6 > button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#div_slider_secao6_interno{
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+}
+#div_slider_secao6_interno > img{
+    border-radius: 4px;
+}
+/* FIM SEÇÃO 6 */
+/* SEÇÃO 7 */
+#secao7{
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+#div_slider_secao7{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#div_slider_secao7 > h3{
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#slider_secao7{
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+#slider_secao7 > button{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.611);
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+
+}
+/*BOTAO 1*/
+#botao1_slider_secao7{
+  left: 0;
+}
+#botao1_slider_secao7 > img{
+  margin-left: 10px;
+}
+/*BOTAO 2*/
+#botao2_slider_secao7{
+  right: 0;
+}
+#botao2_slider_secao7 > img{
+  margin-right: 10px;
+}
+#slider_secao7 > button > img{
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out; 
+  
+}
+#slider_secao7 > button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.815);
+}
+#div_slider_secao7_interno{
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+}
+#div_slider_secao7_interno > img{
+    border-radius: 4px;
+}
+/* FIM SEÇÃO 7 */
 footer{
     background-color: red;
 }
