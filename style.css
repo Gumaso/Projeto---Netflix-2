@@ -15,7 +15,7 @@
 body {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
   zoom: 110%;
   overflow-x: hidden;
 }
@@ -41,7 +41,7 @@ header {
 
 #main_baixo {
   display: grid;
-  grid-template-rows: 0.9fr 0.9fr 2fr 1fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
   gap: 20px;
   background-color: #141414;
 }
@@ -306,7 +306,7 @@ div {
 #div_slider_secao1 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1758px;
   margin-top: 130px;
 }
 
@@ -389,7 +389,7 @@ div {
 
 #div_slider_secao2 {
   display: flex;
-  width: 100%;
+  width: 1758px;
   margin-top: 50px;
   margin-left: 50px;
 
@@ -482,7 +482,7 @@ div {
 #div_slider_secao3 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1758px;
   margin-top: 50px;
   margin-left: 50px;
 
@@ -561,24 +561,26 @@ div {
 }
 
 /* FIM SEÇÃO 3 */
-/* SEÇÃO 4 */
-#secao4 {
-  background-color: #141414;
-
-}
-#div_slider_secao4_interno{
+/*  INICIO SEÇÃO 3b */
+#secao3b {
+  height: 220px;
   display: flex;
-  gap: 10px;
-  margin-left: 0px;
-  transition: all 0.7s ease-in-out;
-}
-#div_slider_secao4_interno > img {
-  width: 392px;
-  height: 500px;
-  border-radius: 4px;
+  flex-direction: column;
+  background-color: #141414;
+  ;
+
 }
 
-#div_slider_secao4 > h3{
+#div_slider_secao3b {
+  display: flex;
+  flex-direction: column;
+  width: 1758px;
+  margin-top: 50px;
+  margin-left: 50px;
+
+}
+
+#div_slider_secao3b>h3 {
   font-family: "Netflix Sans";
   font-size: 26px;
   color: white;
@@ -586,43 +588,150 @@ div {
   margin-top: 100px;
   margin-left: 50px;
 }
-#slider_secao4{
+
+#slider_secao3b {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#slider_secao3b>button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 50px;
+
+
+}
+
+/*BOTAO 1*/
+#botao1_slider_secao3b {
+  left: 0;
+}
+
+#botao1_slider_secao3b>img {
+  margin-left: 10px;
+}
+
+/*BOTAO 2*/
+#botao2_slider_secao3b {
+  right: 0;
+}
+
+#botao2_slider_secao3b>img {
+  margin-right: 10px;
+}
+
+#slider_secao3b>button>img {
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out;
+
+}
+
+#slider_secao3b>button:hover {
+  cursor: pointer;
+  background-color: #0000009d;
+}
+
+#div_slider_secao3b_interno {
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+  transition: all 0.7s ease-in-out;
+}
+
+#div_slider_secao3b_interno>img {
+  border-radius: 4px;
+}
+
+/* FIM SEÇÃO 3b */
+/* SEÇÃO 4 */
+#secao4 {
+  background-color: #141414;
+
+}
+
+#div_slider_secao4 {
+  display: flex;
+  flex-direction: column;
+  width: 1758px;
+  margin-top: 20px;
+  margin-left: 50px;
+
+}
+
+#div_slider_secao4_interno {
+  display: flex;
+  gap: 10px;
+  margin-left: 0px;
+  transition: all 0.7s ease-in-out;
+}
+
+#div_slider_secao4_interno>img {
+  width: 392px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+#div_slider_secao4>h3 {
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
   margin-left: 50px;
 }
-#slider_secao4 > button{
+
+#slider_secao4>button {
   position: absolute;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   width: 60px;
   height: 500px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
-  margin-left: 49px;
+  margin-top: 20px;
+  margin-left: 50px;
 
 
 }
+
 /*BOTAO 1*/
-#botao1_slider_secao4{
+#botao1_slider_secao4 {
   left: 0;
+  display: none;
 }
-#botao1_slider_secao4 > img{
+
+#botao1_slider_secao4>img {
   margin-left: 10px;
 }
+
 /*BOTAO 2*/
-#botao2_slider_secao4{
+#botao2_slider_secao4 {
   right: 0;
 }
-#botao2_slider_secao4 > img{
+
+#botao2_slider_secao4>img {
   margin-right: 10px;
 }
-#slider_secao4 > button > img{
+
+#slider_secao4>button>img {
   width: 40px;
   height: 40px;
   display: none;
-  transition: all 0.7s ease-in-out; 
-  
+  transition: all 0.7s ease-in-out;
+
 }
-#slider_secao4 >button:hover{
+
+#slider_secao4>button:hover {
   cursor: pointer;
   background-color: #0000009d;
 }
@@ -638,6 +747,93 @@ div {
 
 /* FIM SEÇÃO 4 */
 /* SEÇÃO 5 */
+#secao5 {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+}
+
+#div_slider_secao5 {
+  display: flex;
+  flex-direction: column;
+  width: 1758px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#div_slider_secao5>h3 {
+  font-family: "Netflix Sans";
+  font-size: 26px;
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#slider_secao5 {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#slider_secao5>button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.611);
+  border: none;
+  width: 60px;
+  height: 192px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 50px;
+
+}
+
+/*BOTAO 1*/
+#botao1_slider_secao5 {
+  left: 0;
+}
+
+#botao1_slider_secao5>img {
+  margin-left: 10px;
+}
+
+/*BOTAO 2*/
+#botao2_slider_secao5 {
+  right: 0;
+}
+
+#botao2_slider_secao5>img {
+  margin-right: 10px;
+}
+
+#slider_secao5>button>img {
+  width: 40px;
+  height: 40px;
+  display: none;
+  transition: all 0.7s ease-in-out;
+
+}
+
+#slider_secao5>button:hover {
+  cursor: pointer;
+  background-color: #0000009d;
+}
+
+#div_slider_secao5_interno {
+  display: flex;
+  gap: 10px;
+  width: 1758px;
+  margin-left: 0px;
+  transition: all 0.7s ease-in-out;
+
+}
+
+#div_slider_secao5_interno>img {
+  border-radius: 4px;
+}
+
 /* FIM SEÇÃO 5 */
 /* SEÇÃO 6 */
 #secao6 {
@@ -652,7 +848,7 @@ div {
 #div_slider_secao6 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1758px;
   margin-top: 50px;
   margin-left: 50px;
 }
@@ -741,7 +937,7 @@ div {
 #div_slider_secao7 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1758px;
   margin-top: 50px;
   margin-left: 50px;
 }
@@ -802,7 +998,7 @@ div {
 
 #slider_secao7>button:hover {
   cursor: pointer;
-  background-color:#0000009d;
+  background-color: #0000009d;
 }
 
 #div_slider_secao7_interno {
@@ -842,7 +1038,7 @@ div {
 
 #main_secao8 {
   display: flex;
-  margin: 3% 20% 1% 20%;
+  margin: 100px 400px;
 
 }
 

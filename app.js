@@ -46,12 +46,15 @@ function funcao_Sliders(slider_interno_Id, botao1_slider_Id, botao1_slider_img_I
     });
 
     button1.addEventListener('click', function () {
-        if (sliderDiv.style.marginLeft < -16006 + 'px') {
+        if (parseInt(sliderDiv.style.marginLeft) < -24800) {
             totalMargin = 0;
             sliderDiv.style.marginLeft = totalMargin + 'px';
+            
         } else {
             totalMargin = totalMargin - 1758;
             sliderDiv.style.marginLeft = totalMargin + 'px';
+            button1.style.marginLeft = '0px';
+            console.log(sliderDiv.style.marginLeft)
         }
     });
 
@@ -65,12 +68,17 @@ function funcao_Sliders(slider_interno_Id, botao1_slider_Id, botao1_slider_img_I
     });
 
     sliderDiv.style.marginLeft = '0px';
-
+    
     button2.addEventListener('click', function () {
+        console.log(sliderDiv.style.marginLeft)
         if (sliderDiv.style.marginLeft == 0 + 'px') {
-            totalMargin = -12306;
+            totalMargin = -24800;
             sliderDiv.style.marginLeft = totalMargin + 'px';
-        } else {
+        } else if (sliderDiv.style.marginLeft =='-188px'){
+            totalMargin = -24800;
+            sliderDiv.style.marginLeft = totalMargin + 'px';
+            }
+        else {
             totalMargin = totalMargin + 1758;
             sliderDiv.style.marginLeft = totalMargin + 'px';
         }
@@ -96,11 +104,8 @@ function funcao_Sliders_Secao4(slider_interno_Id, botao1_slider_Id, botao1_slide
     button1.addEventListener('click', function () {
         console.log(totalMargin)
         if (sliderDiv.style.marginLeft < '-18058px') {
-
         } else {
-            console.log(totalMargin)
             totalMargin = totalMargin - 1700;
-            console.log(totalMargin)
             sliderDiv.style.marginLeft = totalMargin + 'px';
         }
     });
@@ -133,6 +138,8 @@ funcao_Sliders('div_slider_secao2_interno', 'botao1_slider_secao2', 'botao1_slid
 
 /*SLIDER SECAO 3 */
 funcao_Sliders('div_slider_secao3_interno', 'botao1_slider_secao3', 'botao1_slider_secao3_img', 'botao2_slider_secao3', 'botao2_slider_secao3_img');
+/*SLIDER SECAO 3b */
+funcao_Sliders('div_slider_secao3b_interno', 'botao1_slider_secao3b', 'botao1_slider_secao3b_img', 'botao2_slider_secao3b', 'botao2_slider_secao3b_img');
 
 /* SLIDER SECAO 4 */
 funcao_Sliders_Secao4('div_slider_secao4_interno', 'botao1_slider_secao4', 'botao1_slider_secao4_img', 'botao2_slider_secao4', 'botao2_slider_secao4_img');
